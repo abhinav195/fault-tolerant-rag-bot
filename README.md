@@ -3,6 +3,7 @@
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.109+-green.svg)
 ![LangChain](https://img.shields.io/badge/LangChain-v0.1-orange.svg)
+![LangGraph](https://img.shields.io/badge/LangGraph-v0.1-blueviolet.svg)
 ![Docker](https://img.shields.io/badge/Docker-Enabled-blue)
 
 A robust, production-grade **Retrieval-Augmented Generation (RAG)** system designed for resilience. Unlike standard RAG demos, this bot includes a self-correcting brain that detects failures, rotates API keys to bypass rate limits, and validates answer quality before responding.
