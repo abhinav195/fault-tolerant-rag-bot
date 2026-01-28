@@ -145,4 +145,4 @@ test_rag.bat
 
 ## 📄 License
 
-MIT License. See [LICENSE](LICENSE) file for details.
+MIT License. See [LICENSE](LICENSE) file for details. 
