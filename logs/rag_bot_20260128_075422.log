@@ -1,0 +1,593 @@
+2026-01-28 07:54:22 [INFO] __main__ - Logging initialized. Log file: logs/rag_bot_20260128_075422.log
+2026-01-28 07:54:28 [INFO] chromadb.telemetry.product.posthog - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-28 07:54:28 [INFO] __main__ - ============================================================
+2026-01-28 07:54:28 [INFO] __main__ - 🚀 RAG Q&A Support Bot v2.3.2 - Starting...
+2026-01-28 07:54:28 [INFO] __main__ - ============================================================
+2026-01-28 07:54:28 [INFO] __main__ - 📊 LangSmith Project: RAG-QA-Bot
+2026-01-28 07:54:28 [INFO] __main__ - 🔍 Tracing Enabled: true
+2026-01-28 07:54:28 [INFO] __main__ - 🌐 LangSmith Dashboard: https://smith.langchain.com
+2026-01-28 07:54:28 [INFO] __main__ - 📚 Swagger UI: http://localhost:8000/docs
+2026-01-28 07:54:28 [INFO] __main__ - 📖 ReDoc UI: http://localhost:8000/redoc
+2026-01-28 07:54:28 [INFO] __main__ - 🔑 API Keys: 3 loaded
+2026-01-28 07:54:28 [INFO] __main__ - ⚡ Rate Limit: 45 req/min
+2026-01-28 07:54:28 [INFO] __main__ - 🛡️  Fault Tolerance: ENABLED (Persistent Keys + Smart Retry)
+2026-01-28 07:54:28 [INFO] __main__ - 📝 Log File: logs/rag_bot_20260128_075422.log
+2026-01-28 07:54:28 [INFO] __main__ - ============================================================
+2026-01-28 07:54:46 [INFO] __main__ - 🗑️  Cleared 0 chunks from database
+2026-01-28 07:54:49 [INFO] __main__ - 🌐 Crawling URL: https://en.wikipedia.org/wiki/Artificial_intelligence
+2026-01-28 07:54:49 [INFO] __main__ - ============================================================
+2026-01-28 07:54:49 [INFO] __main__ - 🚀 FAULT-TOLERANT EMBEDDING STARTED
+2026-01-28 07:54:49 [INFO] __main__ - ============================================================
+2026-01-28 07:54:49 [INFO] __main__ - 📊 Total Chunks: 266
+2026-01-28 07:54:49 [INFO] __main__ - 📦 Total Batches: 27 (batch size: 10)
+2026-01-28 07:54:49 [INFO] __main__ - 🔑 API Keys Available: 3
+2026-01-28 07:54:49 [INFO] __main__ - 🛡️  Fault Tolerance: ENABLED
+2026-01-28 07:54:49 [INFO] __main__ - ============================================================
+2026-01-28 07:54:52 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:54:53 [INFO] __main__ - ✅ Batch 1/27 (Key 1)
+2026-01-28 07:54:56 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:54:57 [INFO] __main__ - ✅ Batch 2/27 (Key 1)
+2026-01-28 07:55:00 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:01 [INFO] __main__ - ✅ Batch 3/27 (Key 1)
+2026-01-28 07:55:05 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:05 [INFO] __main__ - ✅ Batch 4/27 (Key 1)
+2026-01-28 07:55:09 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:09 [INFO] __main__ - ✅ Batch 5/27 (Key 1)
+2026-01-28 07:55:13 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:13 [INFO] __main__ - ✅ Batch 6/27 (Key 1)
+2026-01-28 07:55:17 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:17 [INFO] __main__ - ✅ Batch 7/27 (Key 1)
+2026-01-28 07:55:20 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:21 [INFO] __main__ - ✅ Batch 8/27 (Key 1)
+2026-01-28 07:55:25 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:25 [INFO] __main__ - ✅ Batch 9/27 (Key 1)
+2026-01-28 07:55:29 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:30 [INFO] __main__ - ✅ Batch 10/27 (Key 1)
+2026-01-28 07:55:33 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
+2026-01-28 07:55:33 [WARNING] __main__ - ⚠️  Batch 11/27 FAILED with Key 1
+2026-01-28 07:55:33 [WARNING] __main__ -    └─ Rate limit detected (Key 1), switching to next key...
+2026-01-28 07:55:33 [INFO] __main__ - 🔄 Rotated embedding key to Key 2
+2026-01-28 07:55:39 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:39 [INFO] __main__ - ✅ Batch 11/27 SUCCESS (Key 2, recovered after 1 retries)
+2026-01-28 07:55:44 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:44 [INFO] __main__ - ✅ Batch 12/27 (Key 2)
+2026-01-28 07:55:48 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:48 [INFO] __main__ - ✅ Batch 13/27 (Key 2)
+2026-01-28 07:55:52 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:53 [INFO] __main__ - ✅ Batch 14/27 (Key 2)
+2026-01-28 07:55:57 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:55:57 [INFO] __main__ - ✅ Batch 15/27 (Key 2)
+2026-01-28 07:56:00 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:01 [INFO] __main__ - ✅ Batch 16/27 (Key 2)
+2026-01-28 07:56:04 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:05 [INFO] __main__ - ✅ Batch 17/27 (Key 2)
+2026-01-28 07:56:08 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:09 [INFO] __main__ - ✅ Batch 18/27 (Key 2)
+2026-01-28 07:56:13 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:13 [INFO] __main__ - ✅ Batch 19/27 (Key 2)
+2026-01-28 07:56:17 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:18 [INFO] __main__ - ✅ Batch 20/27 (Key 2)
+2026-01-28 07:56:21 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 429 Too Many Requests"
+2026-01-28 07:56:21 [WARNING] __main__ - ⚠️  Batch 21/27 FAILED with Key 2
+2026-01-28 07:56:21 [WARNING] __main__ -    └─ Rate limit detected (Key 2), switching to next key...
+2026-01-28 07:56:21 [INFO] __main__ - 🔄 Rotated embedding key to Key 3
+2026-01-28 07:56:27 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:27 [INFO] __main__ - ✅ Batch 21/27 SUCCESS (Key 3, recovered after 1 retries)
+2026-01-28 07:56:31 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:31 [INFO] __main__ - ✅ Batch 22/27 (Key 3)
+2026-01-28 07:56:35 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:36 [INFO] __main__ - ✅ Batch 23/27 (Key 3)
+2026-01-28 07:56:39 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:40 [INFO] __main__ - ✅ Batch 24/27 (Key 3)
+2026-01-28 07:56:44 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:44 [INFO] __main__ - ✅ Batch 25/27 (Key 3)
+2026-01-28 07:56:48 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:48 [INFO] __main__ - ✅ Batch 26/27 (Key 3)
+2026-01-28 07:56:52 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:52 [INFO] __main__ - ✅ Batch 27/27 (Key 3)
+2026-01-28 07:56:52 [INFO] __main__ - ============================================================
+2026-01-28 07:56:52 [INFO] __main__ - 📊 EMBEDDING SUMMARY
+2026-01-28 07:56:52 [INFO] __main__ - ============================================================
+2026-01-28 07:56:52 [INFO] __main__ - ✅ Successful: 27/27 batches
+2026-01-28 07:56:52 [INFO] __main__ - ❌ Failed: 0 batches
+2026-01-28 07:56:52 [INFO] __main__ - 🎉 ALL CHUNKS INDEXED SUCCESSFULLY!
+2026-01-28 07:56:52 [INFO] __main__ - ============================================================
+2026-01-28 07:56:52 [INFO] __main__ - ❓ Question received: What is AI?
+2026-01-28 07:56:53 [INFO] __main__ - ============================================================
+2026-01-28 07:56:53 [INFO] __main__ - 🔍 SEARCH ATTEMPT 1 (Answer Attempt 0) - Retrieving top 5 documents
+2026-01-28 07:56:53 [INFO] __main__ - ============================================================
+2026-01-28 07:56:55 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:56 [INFO] __main__ - 📊 Retrieved 5 documents
+2026-01-28 07:56:56 [INFO] __main__ - 📈 Similarity Scores: ['0.537', '0.543', '0.548', '0.569', '0.573']
+2026-01-28 07:56:56 [INFO] __main__ - 📉 Average Score: 0.554
+2026-01-28 07:56:56 [INFO] __main__ - 🎯 Quality Threshold (Attempt 1): 0.7
+2026-01-28 07:56:56 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.554 < 0.7 or docs < 3)
+2026-01-28 07:56:56 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:56:56 [INFO] __main__ -    Search Attempts: 1, Enough Results: False, Avg Score: 0.554
+2026-01-28 07:56:56 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:56:56 [INFO] __main__ - ============================================================
+2026-01-28 07:56:56 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:56:56 [INFO] __main__ - ============================================================
+2026-01-28 07:56:56 [INFO] __main__ - 🔄 Current search attempt: 1
+2026-01-28 07:56:56 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:56:56 [INFO] __main__ - 📉 Quality score was: 0.554
+2026-01-28 07:56:56 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:56:56 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:56:56 [INFO] __main__ -    Search Attempts: 1/3
+2026-01-28 07:56:56 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 2)
+2026-01-28 07:56:56 [INFO] __main__ - ============================================================
+2026-01-28 07:56:56 [INFO] __main__ - 🔍 SEARCH ATTEMPT 2 (Answer Attempt 0) - Retrieving top 7 documents
+2026-01-28 07:56:56 [INFO] __main__ - ============================================================
+2026-01-28 07:56:58 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:56:58 [INFO] __main__ - 📊 Retrieved 7 documents
+2026-01-28 07:56:58 [INFO] __main__ - 📈 Similarity Scores: ['0.537', '0.543', '0.548', '0.569', '0.573']
+2026-01-28 07:56:58 [INFO] __main__ - 📉 Average Score: 0.561
+2026-01-28 07:56:58 [INFO] __main__ - 🎯 Quality Threshold (Attempt 2): 0.5
+2026-01-28 07:56:58 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.561 >= 0.5)
+2026-01-28 07:56:58 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:56:58 [INFO] __main__ -    Search Attempts: 2, Enough Results: True, Avg Score: 0.561
+2026-01-28 07:56:58 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:56:58 [INFO] __main__ - ============================================================
+2026-01-28 07:56:58 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 1)
+2026-01-28 07:56:58 [INFO] __main__ - ============================================================
+2026-01-28 07:56:58 [INFO] __main__ - 📚 Using 7 documents
+2026-01-28 07:56:58 [INFO] __main__ - 🔍 After 2 search attempt(s)
+2026-01-28 07:56:58 [INFO] __main__ - 📊 Scores: ['0.537', '0.543', '0.548', '0.569', '0.573']
+2026-01-28 07:57:01 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:01 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:01 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:01 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:01 [INFO] __main__ - 📝 Answer Attempt: 1
+2026-01-28 07:57:01 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:01 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:01 [INFO] __main__ -    Answer Attempts: 1/3, Quality Good: False
+2026-01-28 07:57:01 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:01 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:01 [INFO] __main__ - 🔄 Current search attempt: 2
+2026-01-28 07:57:01 [INFO] __main__ - 🔄 Current answer attempt: 1
+2026-01-28 07:57:01 [INFO] __main__ - 📉 Quality score was: 0.561
+2026-01-28 07:57:01 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:01 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:01 [INFO] __main__ -    Search Attempts: 2/3
+2026-01-28 07:57:01 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 3)
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:01 [INFO] __main__ - 🔍 SEARCH ATTEMPT 3 (Answer Attempt 1) - Retrieving top 10 documents
+2026-01-28 07:57:01 [INFO] __main__ - ============================================================
+2026-01-28 07:57:04 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:04 [INFO] __main__ - 📊 Retrieved 10 documents
+2026-01-28 07:57:04 [INFO] __main__ - 📈 Similarity Scores: ['0.537', '0.543', '0.548', '0.569', '0.573']
+2026-01-28 07:57:04 [INFO] __main__ - 📉 Average Score: 0.572
+2026-01-28 07:57:04 [INFO] __main__ - 🎯 Quality Threshold (Attempt 3): 0.3
+2026-01-28 07:57:04 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.572 >= 0.3)
+2026-01-28 07:57:04 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:04 [INFO] __main__ -    Search Attempts: 3, Enough Results: True, Avg Score: 0.572
+2026-01-28 07:57:04 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:04 [INFO] __main__ - ============================================================
+2026-01-28 07:57:04 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 2)
+2026-01-28 07:57:04 [INFO] __main__ - ============================================================
+2026-01-28 07:57:04 [INFO] __main__ - 📚 Using 10 documents
+2026-01-28 07:57:04 [INFO] __main__ - 🔍 After 3 search attempt(s)
+2026-01-28 07:57:04 [INFO] __main__ - 📊 Scores: ['0.537', '0.543', '0.548', '0.569', '0.573']
+2026-01-28 07:57:06 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:06 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:06 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [INFO] __main__ - 📝 Answer Attempt: 2
+2026-01-28 07:57:06 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:06 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:06 [INFO] __main__ -    Answer Attempts: 2/3, Quality Good: False
+2026-01-28 07:57:06 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [INFO] __main__ - 🔄 Current search attempt: 3
+2026-01-28 07:57:06 [INFO] __main__ - 🔄 Current answer attempt: 2
+2026-01-28 07:57:06 [INFO] __main__ - 📉 Quality score was: 0.572
+2026-01-28 07:57:06 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:06 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:06 [INFO] __main__ -    Search Attempts: 3/3
+2026-01-28 07:57:06 [INFO] __main__ -    ➡️  Route: FINAL_FALLBACK (max search attempts reached)
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [INFO] __main__ - 🛑 FINAL FALLBACK NODE - Max Retries Reached
+2026-01-28 07:57:06 [INFO] __main__ - ============================================================
+2026-01-28 07:57:06 [ERROR] __main__ - ❌ Failed after 3 search attempts and 2 answer attempts
+2026-01-28 07:57:06 [INFO] __main__ - 📉 Best scores: ['0.537', '0.543', '0.548']
+2026-01-28 07:57:07 [INFO] __main__ - ❓ Question received: What is the difference between ML and DL?
+2026-01-28 07:57:07 [INFO] __main__ - ============================================================
+2026-01-28 07:57:07 [INFO] __main__ - 🔍 SEARCH ATTEMPT 1 (Answer Attempt 0) - Retrieving top 5 documents
+2026-01-28 07:57:07 [INFO] __main__ - ============================================================
+2026-01-28 07:57:09 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:09 [INFO] __main__ - 📊 Retrieved 5 documents
+2026-01-28 07:57:09 [INFO] __main__ - 📈 Similarity Scores: ['0.614', '0.623', '0.640', '0.659', '0.665']
+2026-01-28 07:57:09 [INFO] __main__ - 📉 Average Score: 0.640
+2026-01-28 07:57:09 [INFO] __main__ - 🎯 Quality Threshold (Attempt 1): 0.7
+2026-01-28 07:57:09 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.640 < 0.7 or docs < 3)
+2026-01-28 07:57:09 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:09 [INFO] __main__ -    Search Attempts: 1, Enough Results: False, Avg Score: 0.640
+2026-01-28 07:57:09 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:57:09 [INFO] __main__ - ============================================================
+2026-01-28 07:57:09 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:09 [INFO] __main__ - ============================================================
+2026-01-28 07:57:09 [INFO] __main__ - 🔄 Current search attempt: 1
+2026-01-28 07:57:09 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:57:09 [INFO] __main__ - 📉 Quality score was: 0.640
+2026-01-28 07:57:09 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:09 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:09 [INFO] __main__ -    Search Attempts: 1/3
+2026-01-28 07:57:09 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 2)
+2026-01-28 07:57:09 [INFO] __main__ - ============================================================
+2026-01-28 07:57:09 [INFO] __main__ - 🔍 SEARCH ATTEMPT 2 (Answer Attempt 0) - Retrieving top 7 documents
+2026-01-28 07:57:09 [INFO] __main__ - ============================================================
+2026-01-28 07:57:12 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:12 [INFO] __main__ - 📊 Retrieved 7 documents
+2026-01-28 07:57:12 [INFO] __main__ - 📈 Similarity Scores: ['0.614', '0.623', '0.640', '0.659', '0.665']
+2026-01-28 07:57:12 [INFO] __main__ - 📉 Average Score: 0.653
+2026-01-28 07:57:12 [INFO] __main__ - 🎯 Quality Threshold (Attempt 2): 0.5
+2026-01-28 07:57:12 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.653 >= 0.5)
+2026-01-28 07:57:12 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:12 [INFO] __main__ -    Search Attempts: 2, Enough Results: True, Avg Score: 0.653
+2026-01-28 07:57:12 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:12 [INFO] __main__ - ============================================================
+2026-01-28 07:57:12 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 1)
+2026-01-28 07:57:12 [INFO] __main__ - ============================================================
+2026-01-28 07:57:12 [INFO] __main__ - 📚 Using 7 documents
+2026-01-28 07:57:12 [INFO] __main__ - 🔍 After 2 search attempt(s)
+2026-01-28 07:57:12 [INFO] __main__ - 📊 Scores: ['0.614', '0.623', '0.640', '0.659', '0.665']
+2026-01-28 07:57:14 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:14 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:15 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:15 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:15 [INFO] __main__ - 📝 Answer Attempt: 1
+2026-01-28 07:57:15 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:15 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:15 [INFO] __main__ -    Answer Attempts: 1/3, Quality Good: False
+2026-01-28 07:57:15 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:15 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:15 [INFO] __main__ - 🔄 Current search attempt: 2
+2026-01-28 07:57:15 [INFO] __main__ - 🔄 Current answer attempt: 1
+2026-01-28 07:57:15 [INFO] __main__ - 📉 Quality score was: 0.653
+2026-01-28 07:57:15 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:15 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:15 [INFO] __main__ -    Search Attempts: 2/3
+2026-01-28 07:57:15 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 3)
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:15 [INFO] __main__ - 🔍 SEARCH ATTEMPT 3 (Answer Attempt 1) - Retrieving top 10 documents
+2026-01-28 07:57:15 [INFO] __main__ - ============================================================
+2026-01-28 07:57:17 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:18 [INFO] __main__ - 📊 Retrieved 10 documents
+2026-01-28 07:57:18 [INFO] __main__ - 📈 Similarity Scores: ['0.614', '0.623', '0.640', '0.659', '0.665']
+2026-01-28 07:57:18 [INFO] __main__ - 📉 Average Score: 0.667
+2026-01-28 07:57:18 [INFO] __main__ - 🎯 Quality Threshold (Attempt 3): 0.3
+2026-01-28 07:57:18 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.667 >= 0.3)
+2026-01-28 07:57:18 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:18 [INFO] __main__ -    Search Attempts: 3, Enough Results: True, Avg Score: 0.667
+2026-01-28 07:57:18 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:18 [INFO] __main__ - ============================================================
+2026-01-28 07:57:18 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 2)
+2026-01-28 07:57:18 [INFO] __main__ - ============================================================
+2026-01-28 07:57:18 [INFO] __main__ - 📚 Using 10 documents
+2026-01-28 07:57:18 [INFO] __main__ - 🔍 After 3 search attempt(s)
+2026-01-28 07:57:18 [INFO] __main__ - 📊 Scores: ['0.614', '0.623', '0.640', '0.659', '0.665']
+2026-01-28 07:57:20 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:20 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:20 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [INFO] __main__ - 📝 Answer Attempt: 2
+2026-01-28 07:57:20 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:20 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:20 [INFO] __main__ -    Answer Attempts: 2/3, Quality Good: False
+2026-01-28 07:57:20 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [INFO] __main__ - 🔄 Current search attempt: 3
+2026-01-28 07:57:20 [INFO] __main__ - 🔄 Current answer attempt: 2
+2026-01-28 07:57:20 [INFO] __main__ - 📉 Quality score was: 0.667
+2026-01-28 07:57:20 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:20 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:20 [INFO] __main__ -    Search Attempts: 3/3
+2026-01-28 07:57:20 [INFO] __main__ -    ➡️  Route: FINAL_FALLBACK (max search attempts reached)
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [INFO] __main__ - 🛑 FINAL FALLBACK NODE - Max Retries Reached
+2026-01-28 07:57:20 [INFO] __main__ - ============================================================
+2026-01-28 07:57:20 [ERROR] __main__ - ❌ Failed after 3 search attempts and 2 answer attempts
+2026-01-28 07:57:20 [INFO] __main__ - 📉 Best scores: ['0.614', '0.623', '0.640']
+2026-01-28 07:57:21 [INFO] __main__ - ❓ Question received: What are the ethical implications of AGI?
+2026-01-28 07:57:21 [INFO] __main__ - ============================================================
+2026-01-28 07:57:21 [INFO] __main__ - 🔍 SEARCH ATTEMPT 1 (Answer Attempt 0) - Retrieving top 5 documents
+2026-01-28 07:57:21 [INFO] __main__ - ============================================================
+2026-01-28 07:57:24 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:24 [INFO] __main__ - 📊 Retrieved 5 documents
+2026-01-28 07:57:24 [INFO] __main__ - 📈 Similarity Scores: ['0.553', '0.562', '0.565', '0.568', '0.581']
+2026-01-28 07:57:24 [INFO] __main__ - 📉 Average Score: 0.566
+2026-01-28 07:57:24 [INFO] __main__ - 🎯 Quality Threshold (Attempt 1): 0.7
+2026-01-28 07:57:24 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.566 < 0.7 or docs < 3)
+2026-01-28 07:57:24 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:24 [INFO] __main__ -    Search Attempts: 1, Enough Results: False, Avg Score: 0.566
+2026-01-28 07:57:24 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:57:24 [INFO] __main__ - ============================================================
+2026-01-28 07:57:24 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:24 [INFO] __main__ - ============================================================
+2026-01-28 07:57:24 [INFO] __main__ - 🔄 Current search attempt: 1
+2026-01-28 07:57:24 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:57:24 [INFO] __main__ - 📉 Quality score was: 0.566
+2026-01-28 07:57:24 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:24 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:24 [INFO] __main__ -    Search Attempts: 1/3
+2026-01-28 07:57:24 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 2)
+2026-01-28 07:57:24 [INFO] __main__ - ============================================================
+2026-01-28 07:57:24 [INFO] __main__ - 🔍 SEARCH ATTEMPT 2 (Answer Attempt 0) - Retrieving top 7 documents
+2026-01-28 07:57:24 [INFO] __main__ - ============================================================
+2026-01-28 07:57:27 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:27 [INFO] __main__ - 📊 Retrieved 7 documents
+2026-01-28 07:57:27 [INFO] __main__ - 📈 Similarity Scores: ['0.553', '0.562', '0.565', '0.568', '0.581']
+2026-01-28 07:57:27 [INFO] __main__ - 📉 Average Score: 0.573
+2026-01-28 07:57:27 [INFO] __main__ - 🎯 Quality Threshold (Attempt 2): 0.5
+2026-01-28 07:57:27 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.573 >= 0.5)
+2026-01-28 07:57:27 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:27 [INFO] __main__ -    Search Attempts: 2, Enough Results: True, Avg Score: 0.573
+2026-01-28 07:57:27 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:27 [INFO] __main__ - ============================================================
+2026-01-28 07:57:27 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 1)
+2026-01-28 07:57:27 [INFO] __main__ - ============================================================
+2026-01-28 07:57:27 [INFO] __main__ - 📚 Using 7 documents
+2026-01-28 07:57:27 [INFO] __main__ - 🔍 After 2 search attempt(s)
+2026-01-28 07:57:27 [INFO] __main__ - 📊 Scores: ['0.553', '0.562', '0.565', '0.568', '0.581']
+2026-01-28 07:57:29 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:29 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:29 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:29 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:29 [INFO] __main__ - 📝 Answer Attempt: 1
+2026-01-28 07:57:29 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:29 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:29 [INFO] __main__ -    Answer Attempts: 1/3, Quality Good: False
+2026-01-28 07:57:29 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:29 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:29 [INFO] __main__ - 🔄 Current search attempt: 2
+2026-01-28 07:57:29 [INFO] __main__ - 🔄 Current answer attempt: 1
+2026-01-28 07:57:29 [INFO] __main__ - 📉 Quality score was: 0.573
+2026-01-28 07:57:29 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:29 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:29 [INFO] __main__ -    Search Attempts: 2/3
+2026-01-28 07:57:29 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 3)
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:29 [INFO] __main__ - 🔍 SEARCH ATTEMPT 3 (Answer Attempt 1) - Retrieving top 10 documents
+2026-01-28 07:57:29 [INFO] __main__ - ============================================================
+2026-01-28 07:57:32 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:32 [INFO] __main__ - 📊 Retrieved 10 documents
+2026-01-28 07:57:32 [INFO] __main__ - 📈 Similarity Scores: ['0.553', '0.562', '0.565', '0.568', '0.581']
+2026-01-28 07:57:32 [INFO] __main__ - 📉 Average Score: 0.581
+2026-01-28 07:57:32 [INFO] __main__ - 🎯 Quality Threshold (Attempt 3): 0.3
+2026-01-28 07:57:32 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.581 >= 0.3)
+2026-01-28 07:57:32 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:32 [INFO] __main__ -    Search Attempts: 3, Enough Results: True, Avg Score: 0.581
+2026-01-28 07:57:32 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:32 [INFO] __main__ - ============================================================
+2026-01-28 07:57:32 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 2)
+2026-01-28 07:57:32 [INFO] __main__ - ============================================================
+2026-01-28 07:57:32 [INFO] __main__ - 📚 Using 10 documents
+2026-01-28 07:57:32 [INFO] __main__ - 🔍 After 3 search attempt(s)
+2026-01-28 07:57:32 [INFO] __main__ - 📊 Scores: ['0.553', '0.562', '0.565', '0.568', '0.581']
+2026-01-28 07:57:34 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:34 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:34 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [INFO] __main__ - 📝 Answer Attempt: 2
+2026-01-28 07:57:34 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:34 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:34 [INFO] __main__ -    Answer Attempts: 2/3, Quality Good: False
+2026-01-28 07:57:34 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [INFO] __main__ - 🔄 Current search attempt: 3
+2026-01-28 07:57:34 [INFO] __main__ - 🔄 Current answer attempt: 2
+2026-01-28 07:57:34 [INFO] __main__ - 📉 Quality score was: 0.581
+2026-01-28 07:57:34 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:34 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:34 [INFO] __main__ -    Search Attempts: 3/3
+2026-01-28 07:57:34 [INFO] __main__ -    ➡️  Route: FINAL_FALLBACK (max search attempts reached)
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [INFO] __main__ - 🛑 FINAL FALLBACK NODE - Max Retries Reached
+2026-01-28 07:57:34 [INFO] __main__ - ============================================================
+2026-01-28 07:57:34 [ERROR] __main__ - ❌ Failed after 3 search attempts and 2 answer attempts
+2026-01-28 07:57:34 [INFO] __main__ - 📉 Best scores: ['0.553', '0.562', '0.565']
+2026-01-28 07:57:35 [INFO] __main__ - ❓ Question received: What is quantum computing?
+2026-01-28 07:57:35 [INFO] __main__ - ============================================================
+2026-01-28 07:57:35 [INFO] __main__ - 🔍 SEARCH ATTEMPT 1 (Answer Attempt 0) - Retrieving top 5 documents
+2026-01-28 07:57:35 [INFO] __main__ - ============================================================
+2026-01-28 07:57:37 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:37 [INFO] __main__ - 📊 Retrieved 5 documents
+2026-01-28 07:57:37 [INFO] __main__ - 📈 Similarity Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:37 [INFO] __main__ - 📉 Average Score: 0.761
+2026-01-28 07:57:37 [INFO] __main__ - 🎯 Quality Threshold (Attempt 1): 0.7
+2026-01-28 07:57:37 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.761 >= 0.7)
+2026-01-28 07:57:37 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:37 [INFO] __main__ -    Search Attempts: 1, Enough Results: True, Avg Score: 0.761
+2026-01-28 07:57:37 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:37 [INFO] __main__ - ============================================================
+2026-01-28 07:57:37 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 1)
+2026-01-28 07:57:37 [INFO] __main__ - ============================================================
+2026-01-28 07:57:37 [INFO] __main__ - 📚 Using 5 documents
+2026-01-28 07:57:37 [INFO] __main__ - 🔍 After 1 search attempt(s)
+2026-01-28 07:57:37 [INFO] __main__ - 📊 Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:40 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:40 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:40 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:40 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:40 [INFO] __main__ - 📝 Answer Attempt: 1
+2026-01-28 07:57:40 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:40 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:40 [INFO] __main__ -    Answer Attempts: 1/3, Quality Good: False
+2026-01-28 07:57:40 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:40 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:40 [INFO] __main__ - 🔄 Current search attempt: 1
+2026-01-28 07:57:40 [INFO] __main__ - 🔄 Current answer attempt: 1
+2026-01-28 07:57:40 [INFO] __main__ - 📉 Quality score was: 0.761
+2026-01-28 07:57:40 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:40 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:40 [INFO] __main__ -    Search Attempts: 1/3
+2026-01-28 07:57:40 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 2)
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:40 [INFO] __main__ - 🔍 SEARCH ATTEMPT 2 (Answer Attempt 1) - Retrieving top 7 documents
+2026-01-28 07:57:40 [INFO] __main__ - ============================================================
+2026-01-28 07:57:42 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:42 [INFO] __main__ - 📊 Retrieved 7 documents
+2026-01-28 07:57:42 [INFO] __main__ - 📈 Similarity Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:42 [INFO] __main__ - 📉 Average Score: 0.772
+2026-01-28 07:57:42 [INFO] __main__ - 🎯 Quality Threshold (Attempt 2): 0.5
+2026-01-28 07:57:42 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.772 >= 0.5)
+2026-01-28 07:57:42 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:42 [INFO] __main__ -    Search Attempts: 2, Enough Results: True, Avg Score: 0.772
+2026-01-28 07:57:42 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:42 [INFO] __main__ - ============================================================
+2026-01-28 07:57:42 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 2)
+2026-01-28 07:57:42 [INFO] __main__ - ============================================================
+2026-01-28 07:57:42 [INFO] __main__ - 📚 Using 7 documents
+2026-01-28 07:57:42 [INFO] __main__ - 🔍 After 2 search attempt(s)
+2026-01-28 07:57:42 [INFO] __main__ - 📊 Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:45 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:45 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:45 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:45 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:45 [INFO] __main__ - 📝 Answer Attempt: 2
+2026-01-28 07:57:45 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:45 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:45 [INFO] __main__ -    Answer Attempts: 2/3, Quality Good: False
+2026-01-28 07:57:45 [INFO] __main__ -    ➡️  Route: FALLBACK (answer quality low, will re-search)
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:45 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:45 [INFO] __main__ - 🔄 Current search attempt: 2
+2026-01-28 07:57:45 [INFO] __main__ - 🔄 Current answer attempt: 2
+2026-01-28 07:57:45 [INFO] __main__ - 📉 Quality score was: 0.772
+2026-01-28 07:57:45 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:45 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:45 [INFO] __main__ -    Search Attempts: 2/3
+2026-01-28 07:57:45 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 3)
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:45 [INFO] __main__ - 🔍 SEARCH ATTEMPT 3 (Answer Attempt 2) - Retrieving top 10 documents
+2026-01-28 07:57:45 [INFO] __main__ - ============================================================
+2026-01-28 07:57:47 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:47 [INFO] __main__ - 📊 Retrieved 10 documents
+2026-01-28 07:57:47 [INFO] __main__ - 📈 Similarity Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:47 [INFO] __main__ - 📉 Average Score: 0.781
+2026-01-28 07:57:47 [INFO] __main__ - 🎯 Quality Threshold (Attempt 3): 0.3
+2026-01-28 07:57:47 [INFO] __main__ - ✅ QUALITY CHECK PASSED! (avg=0.781 >= 0.3)
+2026-01-28 07:57:47 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:47 [INFO] __main__ -    Search Attempts: 3, Enough Results: True, Avg Score: 0.781
+2026-01-28 07:57:47 [INFO] __main__ -    ➡️  Route: SUMMARIZE (quality passed!)
+2026-01-28 07:57:47 [INFO] __main__ - ============================================================
+2026-01-28 07:57:47 [INFO] __main__ - ✨ SUMMARIZE NODE - Generating Answer (Attempt 3)
+2026-01-28 07:57:47 [INFO] __main__ - ============================================================
+2026-01-28 07:57:47 [INFO] __main__ - 📚 Using 10 documents
+2026-01-28 07:57:47 [INFO] __main__ - 🔍 After 3 search attempt(s)
+2026-01-28 07:57:47 [INFO] __main__ - 📊 Scores: ['0.708', '0.749', '0.766', '0.785', '0.796']
+2026-01-28 07:57:50 [INFO] google_genai.models - AFC is enabled with max remote calls: 10.
+2026-01-28 07:57:50 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash-exp:generateContent "HTTP/1.1 404 Not Found"
+2026-01-28 07:57:50 [ERROR] __main__ - ❌ All API keys exhausted for LLM: Error calling model 'gemini-2.0-flash-exp' (NOT_FOUND): 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-2.0-flash-exp is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2026-01-28 07:57:50 [INFO] __main__ - ============================================================
+2026-01-28 07:57:50 [INFO] __main__ - 🔎 VALIDATE ANSWER NODE - Checking Answer Quality
+2026-01-28 07:57:50 [INFO] __main__ - ============================================================
+2026-01-28 07:57:50 [INFO] __main__ - 📝 Answer Attempt: 3
+2026-01-28 07:57:50 [WARNING] __main__ - ⚠️  Answer is a REFUSAL - quality check FAILED
+2026-01-28 07:57:50 [INFO] __main__ - 🔀 ROUTING DECISION after validate:
+2026-01-28 07:57:50 [INFO] __main__ -    Answer Attempts: 3/3, Quality Good: False
+2026-01-28 07:57:50 [INFO] __main__ -    ➡️  Route: END (max answer attempts reached, keeping best answer)
+2026-01-28 07:57:51 [INFO] __main__ - 🗑️  Cleared 266 chunks from database
+2026-01-28 07:57:51 [INFO] __main__ - ❓ Question received: What is AI?
+2026-01-28 07:57:51 [INFO] __main__ - ============================================================
+2026-01-28 07:57:51 [INFO] __main__ - 🔍 SEARCH ATTEMPT 1 (Answer Attempt 0) - Retrieving top 5 documents
+2026-01-28 07:57:51 [INFO] __main__ - ============================================================
+2026-01-28 07:57:54 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:54 [INFO] __main__ - 📊 Retrieved 0 documents
+2026-01-28 07:57:54 [INFO] __main__ - 📈 Similarity Scores: []
+2026-01-28 07:57:54 [INFO] __main__ - 📉 Average Score: 0.000
+2026-01-28 07:57:54 [INFO] __main__ - 🎯 Quality Threshold (Attempt 1): 0.7
+2026-01-28 07:57:54 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.000 < 0.7 or docs < 3)
+2026-01-28 07:57:54 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:54 [INFO] __main__ -    Search Attempts: 1, Enough Results: False, Avg Score: 0.000
+2026-01-28 07:57:54 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:57:54 [INFO] __main__ - ============================================================
+2026-01-28 07:57:54 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:54 [INFO] __main__ - ============================================================
+2026-01-28 07:57:54 [INFO] __main__ - 🔄 Current search attempt: 1
+2026-01-28 07:57:54 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:57:54 [INFO] __main__ - 📉 Quality score was: 0.000
+2026-01-28 07:57:54 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:54 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:54 [INFO] __main__ -    Search Attempts: 1/3
+2026-01-28 07:57:54 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 2)
+2026-01-28 07:57:54 [INFO] __main__ - ============================================================
+2026-01-28 07:57:54 [INFO] __main__ - 🔍 SEARCH ATTEMPT 2 (Answer Attempt 0) - Retrieving top 7 documents
+2026-01-28 07:57:54 [INFO] __main__ - ============================================================
+2026-01-28 07:57:56 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:57:56 [INFO] __main__ - 📊 Retrieved 0 documents
+2026-01-28 07:57:56 [INFO] __main__ - 📈 Similarity Scores: []
+2026-01-28 07:57:56 [INFO] __main__ - 📉 Average Score: 0.000
+2026-01-28 07:57:56 [INFO] __main__ - 🎯 Quality Threshold (Attempt 2): 0.5
+2026-01-28 07:57:56 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.000 < 0.5 or docs < 3)
+2026-01-28 07:57:56 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:57:56 [INFO] __main__ -    Search Attempts: 2, Enough Results: False, Avg Score: 0.000
+2026-01-28 07:57:56 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:57:56 [INFO] __main__ - ============================================================
+2026-01-28 07:57:56 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:57:56 [INFO] __main__ - ============================================================
+2026-01-28 07:57:56 [INFO] __main__ - 🔄 Current search attempt: 2
+2026-01-28 07:57:56 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:57:56 [INFO] __main__ - 📉 Quality score was: 0.000
+2026-01-28 07:57:56 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:57:56 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:57:56 [INFO] __main__ -    Search Attempts: 2/3
+2026-01-28 07:57:56 [INFO] __main__ -    ➡️  Route: SEARCH (retry with attempt 3)
+2026-01-28 07:57:56 [INFO] __main__ - ============================================================
+2026-01-28 07:57:56 [INFO] __main__ - 🔍 SEARCH ATTEMPT 3 (Answer Attempt 0) - Retrieving top 10 documents
+2026-01-28 07:57:56 [INFO] __main__ - ============================================================
+2026-01-28 07:58:00 [INFO] httpx - HTTP Request: POST https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents "HTTP/1.1 200 OK"
+2026-01-28 07:58:00 [INFO] __main__ - 📊 Retrieved 0 documents
+2026-01-28 07:58:00 [INFO] __main__ - 📈 Similarity Scores: []
+2026-01-28 07:58:00 [INFO] __main__ - 📉 Average Score: 0.000
+2026-01-28 07:58:00 [INFO] __main__ - 🎯 Quality Threshold (Attempt 3): 0.3
+2026-01-28 07:58:00 [WARNING] __main__ - ❌ QUALITY CHECK FAILED! (avg=0.000 < 0.3 or docs < 3)
+2026-01-28 07:58:00 [INFO] __main__ - 🔀 ROUTING DECISION after search:
+2026-01-28 07:58:00 [INFO] __main__ -    Search Attempts: 3, Enough Results: False, Avg Score: 0.000
+2026-01-28 07:58:00 [INFO] __main__ -    ➡️  Route: FALLBACK (quality too low, will retry)
+2026-01-28 07:58:00 [INFO] __main__ - ============================================================
+2026-01-28 07:58:00 [INFO] __main__ - ⚠️  FALLBACK NODE - Retry Preparation
+2026-01-28 07:58:00 [INFO] __main__ - ============================================================
+2026-01-28 07:58:00 [INFO] __main__ - 🔄 Current search attempt: 3
+2026-01-28 07:58:00 [INFO] __main__ - 🔄 Current answer attempt: 0
+2026-01-28 07:58:00 [INFO] __main__ - 📉 Quality score was: 0.000
+2026-01-28 07:58:00 [INFO] __main__ - 🔄 Will retry with broader search...
+2026-01-28 07:58:00 [INFO] __main__ - 🔀 ROUTING DECISION after fallback:
+2026-01-28 07:58:00 [INFO] __main__ -    Search Attempts: 3/3
+2026-01-28 07:58:00 [INFO] __main__ -    ➡️  Route: FINAL_FALLBACK (max search attempts reached)
+2026-01-28 07:58:00 [INFO] __main__ - ============================================================
+2026-01-28 07:58:00 [INFO] __main__ - 🛑 FINAL FALLBACK NODE - Max Retries Reached
+2026-01-28 07:58:00 [INFO] __main__ - ============================================================
+2026-01-28 07:58:00 [ERROR] __main__ - ❌ Failed after 3 search attempts and 0 answer attempts
+2026-01-28 07:58:00 [INFO] __main__ - 📉 Best scores: None

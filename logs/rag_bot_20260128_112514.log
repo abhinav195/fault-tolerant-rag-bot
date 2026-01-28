@@ -1,0 +1,15 @@
+2026-01-28 11:25:14 [INFO] __main__ - Logging initialized. Log file: logs/rag_bot_20260128_112514.log
+2026-01-28 11:25:16 [INFO] chromadb.telemetry.product.posthog - Anonymized telemetry enabled. See                     https://docs.trychroma.com/telemetry for more information.
+2026-01-28 11:25:17 [INFO] __main__ - ============================================================
+2026-01-28 11:25:17 [INFO] __main__ - 🚀 RAG Q&A Support Bot v2.3.2 - Starting...
+2026-01-28 11:25:17 [INFO] __main__ - ============================================================
+2026-01-28 11:25:17 [INFO] __main__ - 📊 LangSmith Project: RAG-QA-Bot
+2026-01-28 11:25:17 [INFO] __main__ - 🔍 Tracing Enabled: true
+2026-01-28 11:25:17 [INFO] __main__ - 🌐 LangSmith Dashboard: https://smith.langchain.com
+2026-01-28 11:25:17 [INFO] __main__ - 📚 Swagger UI: http://localhost:8000/docs
+2026-01-28 11:25:17 [INFO] __main__ - 📖 ReDoc UI: http://localhost:8000/redoc
+2026-01-28 11:25:17 [INFO] __main__ - 🔑 API Keys: 3 loaded
+2026-01-28 11:25:17 [INFO] __main__ - ⚡ Rate Limit: 45 req/min
+2026-01-28 11:25:17 [INFO] __main__ - 🛡️  Fault Tolerance: ENABLED (Persistent Keys + Smart Retry)
+2026-01-28 11:25:17 [INFO] __main__ - 📝 Log File: logs/rag_bot_20260128_112514.log
+2026-01-28 11:25:17 [INFO] __main__ - ============================================================

@@ -1,0 +1,23 @@
+C:\FS Projects\RAG Q&A Support Bot>test_quick.bat
+============================================================
+┬á RAG BOT - QUICK TEST (5 Questions)
+============================================================
+Clearing and re-indexing...
+{"status":"success","message":"Cleared 0 chunks from database","current_count":0}{"status":"success","url":"https://en.wikipedia.org/wiki/Artificial_intelligence","chunks_created":266,"total_characters":211487,"api_keys_used":3,"fault_tolerance":"enabled","rate_limit":"45 req/min"}
+=== TEST 1: EASY (Should succeed in 1 attempt) ===
+{"question":"What is AI?","answer":"Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.","documents_used":7,"search_attempts":2,"answer_attempts":1,"max_attempts":3,"similarity_scores":[0.537,0.543,0.548,0.569,0.573],"answer_quality_good":true,"api_keys_available":3,"fault_tolerance":"enabled (persistent keys + smart retry)","langsmith_trace":"https://smith.langchain.com"}
+
+=== TEST 2: MEDIUM (Should succeed in 1-2 attempts) ===
+{"question":"What is the difference between ML and DL?","answer":"Deep learning is a subset of machine learning, which is itself a subset of artificial intelligence.","documents_used":7,"search_attempts":2,"answer_attempts":1,"max_attempts":3,"similarity_scores":[0.614,0.623,0.64,0.659,0.665],"answer_quality_good":true,"api_keys_available":3,"fault_tolerance":"enabled (persistent keys + smart retry)","langsmith_trace":"https://smith.langchain.com"}
+
+=== TEST 3: HARD (May retry 2-3 times) ===
+{"question":"What are the ethical implications of AGI?","answer":"Could not find high-quality relevant results after 3 search attempts and 2 answer attempts. Please try:\n1. Crawling more relevant URLs\n2. Rephrasing your question\n3. Asking about topics covered in the indexed content","documents_used":10,"search_attempts":3,"answer_attempts":2,"max_attempts":3,"similarity_scores":[0.553,0.562,0.565,0.568,0.581],"answer_quality_good":false,"api_keys_available":3,"fault_tolerance":"enabled (persistent keys + smart retry)","langsmith_trace":"https://smith.langchain.com"}
+
+=== TEST 4: IMPOSSIBLE (Should refuse gracefully) ===
+{"question":"What is quantum computing?","answer":"I don't have enough information to answer this question based on the crawled content.","documents_used":10,"search_attempts":3,"answer_attempts":3,"max_attempts":3,"similarity_scores":[0.708,0.749,0.766,0.785,0.796],"answer_quality_good":false,"api_keys_available":3,"fault_tolerance":"enabled (persistent keys + smart retry)","langsmith_trace":"https://smith.langchain.com"}
+
+=== TEST 5: FALLBACK (Clear DB first) ===
+{"status":"success","message":"Cleared 266 chunks from database","current_count":0}{"question":"What is AI?","answer":"Could not find high-quality relevant results after 3 search attempts and 0 answer attempts. Please try:\n1. Crawling more relevant URLs\n2. Rephrasing your question\n3. Asking about topics covered in the indexed content","documents_used":0,"search_attempts":3,"answer_attempts":0,"max_attempts":3,"similarity_scores":[],"answer_quality_good":false,"api_keys_available":3,"fault_tolerance":"enabled (persistent keys + smart retry)","langsmith_trace":"https://smith.langchain.com"}
+
+DONE! Check console output and LangSmith traces.
+Press any key to continue . . .

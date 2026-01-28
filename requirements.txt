@@ -1,0 +1,27 @@
+# Core Framework
+fastapi
+uvicorn[standard]
+
+# LangChain Ecosystem
+langchain
+langchain-core
+langchain-community
+langchain-google-genai
+langchain-text-splitters
+
+# LangGraph & LangSmith
+langgraph
+langgraph-checkpoint
+langsmith
+
+# Vector Database
+chromadb
+
+# Web Scraping
+beautifulsoup4
+requests
+lxml
+
+# Utilities
+pydantic
+python-dotenv

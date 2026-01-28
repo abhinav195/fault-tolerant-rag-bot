@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  rag-bot:
+    build: .
+    container_name: rag-qa-bot
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist the vector database
+      - ./chroma_db:/app/chroma_db
+      # Persist logs so you can read them from host
+      - ./logs:/app/logs
+      # Mount .env for local development (optional, but convenient)
+      - ./.env:/app/.env
+    env_file:
+      - .env
+    restart: unless-stopped
